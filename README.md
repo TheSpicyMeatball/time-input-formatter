@@ -37,7 +37,9 @@ import { deriveTimeFormat, Format, ParsedTime } from 'time-input-formatter';
   
 
 
+## Example Inputs &amp; Outputs
 
+<p>These are a few sample partial inputs and how they will be interpreted by the util. These are just a few of the many that it can handle.</p>
 <table>
   <thead>
     <tr>
