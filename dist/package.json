@@ -1,0 +1,36 @@
+{
+  "name": "time-input-formatter",
+  "version": "1.0.0",
+  "description": "Interpret and format a user inputted time string or partial time string to 12hr or 24hr time",
+  "main": "lib/es5/index.js",
+  "module": "lib/es6/index.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSpicyMeatball/time-input-formatter.git"
+  },
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "javascript",
+    "time",
+    "input",
+    "formatter",
+    "formatting"
+  ],
+  "dependencies": {
+    "@paravano/utils": "^1.4.0",
+    "date-fns": "^2.21.1"
+  },
+  "author": "Michael Paravano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheSpicyMeatball/time-input-formatter/issues"
+  },
+  "homepage": "https://github.com/TheSpicyMeatball/time-input-formatter#readme"
+}

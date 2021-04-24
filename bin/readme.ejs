@@ -2,39 +2,17 @@
 [![Coverage Status](https://coveralls.io/repos/github/TheSpicyMeatball/time-input-formatter/badge.svg?branch=main)](https://coveralls.io/github/TheSpicyMeatball/time-input-formatter?branch=main)
 [![dependencies Status](https://status.david-dm.org/gh/TheSpicyMeatball/time-input-formatter.svg)](https://david-dm.org/TheSpicyMeatball/time-input-formatter)
 
-# time-input-formatter
+# <%= package.name %>
 
-<p>Interpret and format a user inputted time string or partial time string to 12hr or 24hr time</p>
+<p><%= package.description %></p>
 
 > This library contains es5 and es6 implementations in the deliverable and is fully tree-shakable for es6.
 
-<p><b>Version:</b> 1.0.0</p>
+<p><b>Version:</b> <%= package.version %></p>
 
-
-  <h2>deriveTimeFormat</h2>
-<p>Derive a time format from a user inputted string</p>
-<p>Since v1.0.0</p>
-<table>
-      <thead>
-      <tr>
-        <th>Param</th>
-        <th>Type</th></tr>
-      </thead>
-      <tbody><tr><td><p><b>value</b></p>The input value to derive the format</td><td>string</td></tr><tr><td><p><b>format</b></p>The desired output format</td><td>Format</td></tr></tbody>
-    </table><p><b>Returns:</b> {ParsedTime}</p><h4>Supporting Types</h4>
-
-```
-export type Format = '12hm' | '12hms' | '24hm' | '24hms';
-export type ParsedTime = { valid: boolean, value: string };
-```
-<h4>Import</h4>
-
-```
-import { deriveTimeFormat, Format, ParsedTime } from 'time-input-formatter';
-```
-
-  
-
+<% utils.forEach(function(util) { %>
+  <%- util %>
+<% }) %>
 
 
 <table>
@@ -131,39 +109,40 @@ import { deriveTimeFormat, Format, ParsedTime } from 'time-input-formatter';
 <a href="#license"></a>
 <h2>License</h2>
 
-MIT
+<%= package.license %>
 
-
+<% if (package.author) { %>
 <a href="#author"></a>
 <h2>Author</h2>
-Michael Paravano
+<% if (package.author.name) { %><%= package.author.name %> [<%= package.author.email %>](<%= package.author.email %>)<% } else { %><%= package.author %><% } %>
+<% } %>
 
+<% if (package.contributors) { %>
+<a href="#contributors"></a>
+<h2>Contributors</h2>
 
-
+<% package.contributors.forEach(function(contributor) { %>
+  <%= contributor %>
+<% }) %>
+<% } %>
 
 <a href="#dependencies"></a>
 <h2>Dependencies</h2>
 
-
-
+<% const dependencies = package.dependencies ? Object.getOwnPropertyNames(package.dependencies) : []; %>
+<% if (dependencies && dependencies.length > 0) { %>
 <table>
-
+<% dependencies.forEach(function(dependency) { %>
   <tr>
     <td>
-      @paravano/utils
+      <%= dependency %>
     </td>
     <td>
-      ^1.4.0
+      <%= package.dependencies[dependency] %>
     </td>
   </tr>
-
-  <tr>
-    <td>
-      date-fns
-    </td>
-    <td>
-      ^2.21.1
-    </td>
-  </tr>
-
+<% }) %>
 </table>
+<% } else { %>
+None
+<% } %>
