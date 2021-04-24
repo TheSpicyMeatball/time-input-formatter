@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.com/TheSpicyMeatball/time-input-formatter.svg?branch=main)](https://travis-ci.com/TheSpicyMeatball/time-input-formatter)
 [![Coverage Status](https://coveralls.io/repos/github/TheSpicyMeatball/time-input-formatter/badge.svg?branch=main)](https://coveralls.io/github/TheSpicyMeatball/time-input-formatter?branch=main)
-[![dependencies Status](https://status.david-dm.org/gh/TheSpicyMeatball/time-input-formatter.svg)](https://david-dm.org/TheSpicyMeatball/time-input-formatter)
+[![dependencies Status](https://status.david-dm.org/gh/TheSpicyMeatball/time-input-formatter.svg?path=dist)](https://david-dm.org/TheSpicyMeatball/time-input-formatter)
+[![npm version](https://badge.fury.io/js/time-input-formatter.svg)](https://badge.fury.io/js/time-input-formatter)
 
 # time-input-formatter
 
